@@ -7,4 +7,4 @@ d) Kotlin coroutines\
 e) Bottom sheets\
 f) Navigation component\
 \
-![](https://github.com/gunbirs/MovieList/blob/main/demo_movie_list.gif)
+![](https://github.com/gunbirs/MovieList/blob/master/demo_movie_list.gif)
