@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    app:startDestination="@id/posterListFragment">
+
+    <fragment
+        android:id="@+id/posterListFragment"
+        android:name="com.example.loadposter.fragments.PosterListFragment" >
+        <action
+            android:id="@+id/action_posterListFragment_to_posterSummaryBottomSheetFragment"
+            app:destination="@id/posterSummaryBottomSheetFragment" />
+    </fragment>
+
+    <dialog
+        android:id="@+id/posterSummaryBottomSheetFragment"
+        android:name="com.example.loadposter.fragments.PosterSummaryBottomSheetFragment" />
+</navigation>

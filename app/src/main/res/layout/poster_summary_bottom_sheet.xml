@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout>
+    <data>
+        <variable
+            name="viewModel"
+            type="com.example.loadposter.viewmodels.PosterListViewModel" />
+    </data>
+    <androidx.cardview.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        card_view:cardCornerRadius="@dimen/poster_bottom_sheet_corner_radius"
+        card_view:cardElevation="@dimen/poster_bottom_sheet_elevation"
+        card_view:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/poster_bottom_sheet_height"
+            android:orientation="vertical"
+            android:padding="@dimen/poster_bottom_sheet_padding">
+
+            <TextView
+                style="@style/PosterSummaryBottomSheetTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/poster_summary_bottom_sheet_title"
+                android:layout_marginBottom="@dimen/poster_bottom_sheet_margin_bottom_title"/>
+
+            <TextView
+                style="@style/PosterSummaryBottomSheetSummary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@{viewModel.currentPosterSummary}"
+                android:layout_marginBottom="@dimen/poster_bottom_sheet_margin_bottom_summary"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</layout>

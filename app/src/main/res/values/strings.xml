@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">LoadPoster</string>
+
+    <string name="poster_summary_bottom_sheet_title" translatable="false">Summary</string>
+</resources>
